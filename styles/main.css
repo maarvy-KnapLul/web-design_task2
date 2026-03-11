@@ -1,0 +1,66 @@
+/* styles/main.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-header {
+    background: white;
+    padding: 1.2rem 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-bottom: 1px solid #e9ecf0;
+}
+
+.app-header h1 {
+    font-weight: 500;
+    color: #1e2b3c;
+    font-size: 1.8rem;
+    letter-spacing: -0.5px;
+}
+
+.toolbar {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    background: #ffffff;
+    border: 1px solid #d0d9e4;
+    padding: 0.6rem 1.4rem;
+    border-radius: 40px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: all 0.15s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.btn:hover {
+    background: #eef2f6;
+    border-color: #a0b3cc;
+    transform: translateY(-1px);
+}
+
+.dashboard {
+    padding: 2rem;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1.8rem;
+    align-items: start;
+}

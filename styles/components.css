@@ -1,0 +1,175 @@
+/* styles/components.css */
+.widget {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.02), 0 2px 6px rgba(0,20,40,0.05);
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+    border: 1px solid #edf2f9;
+    display: flex;
+    flex-direction: column;
+}
+
+.widget:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.04);
+}
+
+.widget-header {
+    padding: 1rem 1.5rem;
+    background: #fafcff;
+    border-bottom: 1px solid #edf2f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: #1d2f44;
+}
+
+.widget-controls button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    color: #7f8fa4;
+    transition: color 0.1s;
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.widget-controls button:hover {
+    background: #eef2f6;
+    color: #e55;
+}
+
+.widget-content {
+    padding: 1.5rem;
+    flex: 1;
+}
+
+/* ToDo виджет */
+.todo-list {
+    list-style: none;
+    margin-bottom: 1.2rem;
+    max-height: 260px;
+    overflow-y: auto;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f4fa;
+    gap: 0.5rem;
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
+
+.todo-text {
+    flex: 1;
+    font-size: 0.95rem;
+    color: #1a2634;
+}
+
+.todo-item.completed .todo-text {
+    text-decoration: line-through;
+    color: #9aa9b9;
+}
+
+.todo-check {
+    width: 20px;
+    height: 20px;
+    accent-color: #3f8cff;
+    cursor: pointer;
+}
+
+.delete-todo {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #bcc9db;
+    transition: color 0.1s;
+}
+
+.delete-todo:hover {
+    color: #f06;
+}
+
+.add-todo-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.add-todo-form input {
+    flex: 1;
+    padding: 0.7rem 1rem;
+    border: 1px solid #dce3ec;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    outline: none;
+    transition: 0.1s;
+}
+
+.add-todo-form input:focus {
+    border-color: #3f8cff;
+    box-shadow: 0 0 0 3px rgba(63,140,255,0.1);
+}
+
+.add-todo-form button {
+    background: #3f8cff;
+    border: none;
+    color: white;
+    border-radius: 40px;
+    padding: 0 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.add-todo-form button:hover {
+    background: #1d6df0;
+}
+
+/* Quote виджет */
+.quote-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #2e405b;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    quotes: "«" "»";
+    position: relative;
+    padding-left: 1.2rem;
+    border-left: 4px solid #d7e2fd;
+}
+
+.quote-author {
+    text-align: right;
+    color: #6f7d95;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.refresh-quote {
+    background: #eef2f8;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 40px;
+    color: #2c3e50;
+    font-weight: 500;
+    cursor: pointer;
+    width: fit-content;
+    transition: 0.1s;
+}
+
+.refresh-quote:hover {
+    background: #dce5f0;
+}
